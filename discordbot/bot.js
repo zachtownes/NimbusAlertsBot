@@ -21,7 +21,7 @@ client.on('message', message => {
     console.log(message)
     if (message.author.bot){
         if(message.author.username === 'Grafana'){
-            if (message.content.includes('[Alerting]')){
+            if (message.title.includes('[Alerting]')){
                 message.channel.send(`${message.author} I can't believe it's broken! I'll get @Checkovsky to try to fix it.`)
             }
         }
