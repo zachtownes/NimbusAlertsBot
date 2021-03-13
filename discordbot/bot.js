@@ -1,5 +1,5 @@
 const { Client, MessageAttachment } = require('discord.js');
-var auth = require('./discordbot/auth.json');
+var auth = require('./auth.json');
 const client = new Client();
 
 function SetPresenceDefault(timeDelay){
