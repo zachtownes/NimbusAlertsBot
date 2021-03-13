@@ -42,6 +42,8 @@ client.on('message', message => {
             message.channel.send(`Help is on the way deary ${message.author}\u000D!clear: Deletes up to 100 of the last 14 days worth of messages. \u000D!avatar: Will show the link and URL to the user\'s avatar. \u000d!hello: Will greet you like any good bot should!`, attachment)
             message.channel.send() 
             SetPresenceDefault(6000)
+        } else if (message.author === 'Grafana'){
+            message.channel.sens(`Hello ${message.author}`)
         } else {
             return;
         }
