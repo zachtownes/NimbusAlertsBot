@@ -32,16 +32,16 @@ client.on('message', message => {
                 } catch (error) {
                     message.channel.send(`${message.author}, I couldn't delete the messages. Sorry`)
                 }
-            }, 6000);            
+            }, 7000);            
+        } else if (message.content === '!hello'){
+            message.channel.send(`HELLOOOOOOO! ${message.author}`)
         } else if (message.content === '!help'){
             client.user.setPresence({status: 'dnd', activity: {name: "Mrs. Doubtfire", type: "WATCHING"}})
             const attachment = new MessageAttachment('./discordbot/doubtfire/help.gif')
             message.channel.send(`Help is on the way deary ${message.author}`, attachment)
             message.channel.send('!clear: Deletes up to 100 of the last 14 days worth of messages. \u000D!avatar: Will show the link and URL to the user\'s avatar.') 
             SetPresenceDefault(6000)
-        } else if (message.content === '!hello'){
-            message.channel.send(`HELLOOOOOOO! ${message.author}`)
-        }else {
+        } else {
             return;
         }
     }
