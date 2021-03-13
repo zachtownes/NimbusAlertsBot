@@ -1,5 +1,5 @@
 const { Client, MessageAttachment } = require('discord.js');
-var auth = require('./auth.json');
+var auth = require('./discordbot/auth.json');
 const client = new Client();
 
 function SetPresenceDefault(timeDelay){
@@ -39,7 +39,7 @@ client.on('message', message => {
             client.user.setPresence({status: 'dnd', activity: {name: "Mrs. Doubtfire", type: "WATCHING"}})
             const attachment = new MessageAttachment('./discordbot/doubtfire/help.gif')
             message.channel.send(`Help is on the way deary ${message.author}`, attachment)
-            message.channel.send('!clear: Deletes up to 100 of the last 14 days worth of messages. \u000D!avatar: Will show the link and URL to the user\'s avatar.') 
+            message.channel.send('!clear: Deletes up to 100 of the last 14 days worth of messages. \u000D!avatar: Will show the link and URL to the user\'s avatar. \u000d!hello: Will greet you like any good bot should!') 
             SetPresenceDefault(6000)
         } else {
             return;
