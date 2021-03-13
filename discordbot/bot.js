@@ -35,7 +35,7 @@ client.on('message', message => {
                 } catch (error) {
                     message.channel.send(`${message.author}, I couldn't delete the messages. Sorry`)
                 }
-            }, 20000);            
+            }, 10000);            
         } else if (message.content === '!hello'){
             const attachment = new MessageAttachment('./discordbot/doubtfire/hello.gif')
             message.channel.send(`HELLLOOOOO! ${message.author}`, attachment)
