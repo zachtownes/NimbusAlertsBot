@@ -19,7 +19,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.author.bot){
-        message.channel.send(`Hello ${message.author}`)
+        if(message.author === 'Grafana'){
+            message.channel.send(`Hello ${message.author}`)
+        }
         return;
     } else {
         if(message.content === '!avatar'){
