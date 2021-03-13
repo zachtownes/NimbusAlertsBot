@@ -35,7 +35,7 @@ client.on('message', message => {
             }, 6000);            
         } else if (message.content === '!help'){
             client.user.setPresence({status: 'dnd', activity: {name: "Mrs. Doubtfire", type: "WATCHING"}})
-            const attachment = new MessageAttachment('./discordbot/doubtfire/clean.gif')
+            const attachment = new MessageAttachment('./discordbot/doubtfire/help.gif')
             message.channel.send(`Help is on the way deary ${message.author}`, attachment)
             message.channel.send('!clear: Deletes up to 100 of the last 14 days worth of messages. \u000D!avatar: Will show the link and URL to the user\'s avatar.') 
             SetPresenceDefault(6000)
