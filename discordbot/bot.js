@@ -32,7 +32,7 @@ client.on('message', message => {
                 } catch (error) {
                     message.channel.send(`${message.author}, I couldn't delete the messages. Sorry`)
                 }
-            }, 7000);            
+            }, 10000);            
         } else if (message.content === '!hello'){
             message.channel.send(`HELLOOOOOOO! ${message.author}`)
         } else if (message.content === '!help'){
