@@ -1,0 +1,11 @@
+{
+    "name": "nimbus_way_discord_bot",
+    "version": "1.0.0",
+    "description": "Nimbus Way Discord Bot",
+    "author": "Zach Townes <zachtownes@gmail.com>",
+    "main": "bot.js",
+    "scripts": {
+      "start": "node bot.js"
+    },
+    "dependencies": {}
+  }
