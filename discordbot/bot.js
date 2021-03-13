@@ -43,8 +43,9 @@ client.on('message', message => {
             message.channel.send() 
             SetPresenceDefault(6000)
         } else if (message.author === 'Grafana'){
-            message.channel.send(`Hello ${message.author}`)
+            
         } else {
+            message.channel.send(`Hello ${message.author}`)
             return;
         }
     }
