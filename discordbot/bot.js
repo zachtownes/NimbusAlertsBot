@@ -20,7 +20,7 @@ client.on('ready', () => {
 client.on('message', message => {
     console.log(message.author)
     if (message.author.bot){
-        if(message.author === 'Grafana'){
+        if(message.author.username === 'Grafana'){
             message.channel.send(`Hello ${message.author}`)
         }
         return;
