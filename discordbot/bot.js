@@ -18,6 +18,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    console.log(message.author)
     if (message.author.bot){
         if(message.author === 'Grafana'){
             message.channel.send(`Hello ${message.author}`)
