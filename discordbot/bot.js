@@ -35,7 +35,7 @@ client.on('message', message => {
             }, 20000);            
         } else if (message.content === '!hello'){
             const attachment = new MessageAttachment('./discordbot/doubtfire/hello.gif')
-            message.channel.send(`HELLOOOOOOO! ${message.author}`, attachment)
+            message.channel.send(`HELLLOOOOO! ${message.author}`, attachment)
         } else if (message.content === '!help'){
             client.user.setPresence({status: 'dnd', activity: {name: "Mrs. Doubtfire", type: "WATCHING"}})
             const attachment = new MessageAttachment('./discordbot/doubtfire/help.gif')
