@@ -13,7 +13,7 @@ function SetPresenceDefault(timeDelay){
 
 
 client.on('ready', () => {
-    console.log('I am ready!');
+    console.log('Mrs. Doubtfire ready for service!');
     client.user.setPresence({status: 'online', activity: {name : 'Waiting for Alert', type: "LISTENING"}})
 });
 
