@@ -28,6 +28,7 @@ client.on('message', message => {
         }
         return;
     } else {
+        console.log(message.author)
         if(message.content === '!avatar'){
             message.reply(message.author.displayAvatarURL());
         } else if (message.content === '!clear'){
@@ -49,8 +50,6 @@ client.on('message', message => {
             message.channel.send(`Help is on the way deary ${message.author}\u000D!clear: Deletes up to 100 of the last 14 days worth of messages. \u000D!avatar: Will show the link and URL to the user\'s avatar. \u000d!hello: Will greet you like any good bot should!`, attachment)
             message.channel.send() 
             SetPresenceDefault(6000)
-        } else if (message.author === 'Grafana'){
-            
         } else {
             message.channel.send(`Hello ${message.author}`)
             return;
