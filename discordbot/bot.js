@@ -23,7 +23,7 @@ client.on('message', message => {
         if(message.author.username === 'Grafana'){
             console.log(message.title);
             // if (message.title('[Alerting]')){
-                message.channel.send(`${message.author} I can't believe it's broken! I'll get @Checkovsky to try to fix it.`)
+                message.channel.send(`${message.author} I can't believe it's broken! I'll get <@401597431252516866> to try to fix it.`)
             // }
         }
         return;
