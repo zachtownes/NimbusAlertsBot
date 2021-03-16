@@ -21,14 +21,14 @@ client.on('message', message => {
     //console.log(message)
     if (message.author.bot){
         if(message.author.username === 'Grafana'){
-            console.log(message.title);
+            console.log(message.embeds);
             // if (message.title('[Alerting]')){
                 message.channel.send(`${message.author} I can't believe it's broken! I'll get <@401597431252516866> to try to fix it.`)
             // }
         }
         return;
     } else {
-        console.log(message.author)
+        //console.log(message.author)
         if(message.content === '!avatar'){
             message.reply(message.author.displayAvatarURL());
         } else if (message.content === '!clear'){
