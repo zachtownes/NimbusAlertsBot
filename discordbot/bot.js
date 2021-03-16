@@ -21,10 +21,10 @@ client.on('message', message => {
     //console.log(message)
     if (message.author.bot){
         if(message.author.username === 'Grafana'){
-            console.log(message.embeds.title);
-            if (message.embeds.title.includes('[Alerting]')){
+            console.log(message.embeds);
+            ///if (message.embeds.title.includes('[Alerting]')){
                 message.channel.send(`${message.author} I can't believe it's broken! I'll get <@401597431252516866> to try to fix it.`)
-            }
+            ///}
         }
         return;
     } else {
